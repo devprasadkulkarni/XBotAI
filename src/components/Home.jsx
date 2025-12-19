@@ -1,9 +1,15 @@
-import React from 'react'
+import Conversations from "./Conversations";
+import NewChat from "./NewChat";
 
 const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+    return (
+        <div>
+            <div className="flex">
+                <NewChat />
+                <Conversations />
+            </div>
+        </div>
+    );
+};
 
-export default Home
+export default Home;
