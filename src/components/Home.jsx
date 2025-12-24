@@ -1,12 +1,14 @@
 import Conversations from "./Conversations";
 import NewChat from "./NewChat";
+import Chat from "./Chat";
 
 const Home = () => {
     return (
         <div>
-            <div className="flex">
+            <div className="flex h-screen w-screen">
                 <NewChat />
-                <Conversations />
+                {/* <Conversations /> */}
+                <Chat />
             </div>
         </div>
     );

@@ -3,7 +3,7 @@ import { TbEdit } from "react-icons/tb";
 
 const NewChat = () => {
     return (
-        <div className="w-[15vw] h-screen ">
+        <div className="w-[15vw] min-w-50 h-screen">
             <div className="flex bg-[#d7c7f4] justify-between items-center p-3 ">
                 <img src={logo_square} alt="logo" />
                 <h2 className="text-2xl">New Chat</h2>
