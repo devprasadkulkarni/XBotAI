@@ -39,16 +39,6 @@ export default function Layout({ children, onNewChat }) {
 
             {/* MAIN */}
             <div className="flex-1 flex flex-col">
-                <header className="flex items-center gap-4 px-4 py-3 border-b">
-                    {/* Mobile menu */}
-                    <MenuIcon
-                        className="md:hidden cursor-pointer"
-                        onClick={() => setOpen(true)}
-                    />
-
-                    <h1 className="text-xl font-semibold">Bot AI</h1>
-                </header>
-
                 {/* Page content */}
                 <main className="flex-1 flex flex-col overflow-hidden">
                     {children}
