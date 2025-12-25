@@ -1,14 +1,12 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./components/Home";
-import History from "./components/History";
+import { Routes, Route } from "react-router-dom";
+import ChatPage from "./pages/ChatPage";
+import HistoryPage from "./pages/HistoryPage";
 
-const App = () => {
+export default function App() {
     return (
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/history" element={<History />} />
+            <Route path="/" element={<ChatPage />} />
+            <Route path="/history" element={<HistoryPage />} />
         </Routes>
     );
-};
-
-export default App;
+}
