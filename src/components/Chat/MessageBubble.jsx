@@ -9,12 +9,15 @@ export default function MessageBubble({ message }) {
             <img
                 src={isBot ? botIcon : userIcon}
                 alt={isBot ? "Soul AI" : "User"}
-                className="w-10 h-10 rounded-full shrink-0"
+                className="w-10 h-10 rounded-full"
             />
 
-            <p className="bg-white p-4 rounded-xl shadow max-w-xl">
-                {message.text}
-            </p>
+            <div>
+                {isBot && <span className="font-semibold">Soul AI</span>}
+                {!isBot && <span className="font-semibold">You</span>}
+
+                <p>{message.text}</p>
+            </div>
         </div>
     );
 }

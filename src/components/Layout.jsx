@@ -15,14 +15,15 @@ export default function Layout({ children, onNewChat }) {
             {/* Sidebar */}
             <aside className="w-64 bg-sidebar p-4 flex flex-col gap-6">
                 {/* New Chat */}
-                <div
-                    className="flex items-center gap-2 cursor-pointer"
+                <Link
+                    to="/"
                     onClick={handleNewChat}
+                    className="flex items-center gap-2"
                 >
                     <img src={logo_square} alt="logo" className="w-8 h-8" />
                     <span className="font-semibold">New Chat</span>
                     <EditIcon fontSize="small" />
-                </div>
+                </Link>
 
                 {/* History */}
                 <Link

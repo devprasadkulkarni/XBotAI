@@ -41,9 +41,7 @@ export default function ChatPage() {
         <Layout onNewChat={handleNewChat}>
             <div className="px-8 py-4">
                 <Link to="/" onClick={handleNewChat}>
-                    <h1 className="text-2xl font-semibold text-primary cursor-pointer">
-                        Bot AI
-                    </h1>
+                    <h1 className="text-2xl font-semibold">Bot AI</h1>
                 </Link>
             </div>
 
